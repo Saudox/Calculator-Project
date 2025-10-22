@@ -1,0 +1,31 @@
+<div id="keys">
+  <button class="op-btn" (click)="onButtonClick('%')" [disabled]="errorMode">%</button>
+  <button class="op-btn" (click)="onButtonClick('C')">C</button>
+  <button class="op-btn" (click)="onButtonClick('CE')">CE</button>
+  <button class="op-btn smol" (click)="onButtonClick('⌫')" [disabled]="errorMode">⌫</button>
+
+  <button class="op-btn" (click)="onButtonClick('1/x')" [disabled]="errorMode">1/𝑥</button>
+  <button class="op-btn" (click)="onButtonClick('x²')" [disabled]="errorMode">𝑥<sup>2</sup></button>
+  <button class="op-btn" (click)="onButtonClick('√x')" [disabled]="errorMode">²√𝑥</button>
+  <button class="op-btn smol" (click)="onButtonClick('&divide;')" [disabled]="errorMode">&divide;</button>
+
+  <button class="num-btn" (click)="onButtonClick('7')" [disabled]="errorMode">7</button>
+  <button class="num-btn" (click)="onButtonClick('8')" [disabled]="errorMode">8</button>
+  <button class="num-btn" (click)="onButtonClick('9')" [disabled]="errorMode">9</button>
+  <button class="op-btn smol" (click)="onButtonClick('&times;')" [disabled]="errorMode">&times;</button>
+
+  <button class="num-btn" (click)="onButtonClick('4')" [disabled]="errorMode">4</button>
+  <button class="num-btn" (click)="onButtonClick('5')" [disabled]="errorMode">5</button>
+  <button class="num-btn" (click)="onButtonClick('6')" [disabled]="errorMode">6</button>
+  <button class="op-btn smol" (click)="onButtonClick('-')" [disabled]="errorMode">-</button>
+
+  <button class="num-btn" (click)="onButtonClick('1')" [disabled]="errorMode">1</button>
+  <button class="num-btn" (click)="onButtonClick('2')" [disabled]="errorMode">2</button>
+  <button class="num-btn" (click)="onButtonClick('3')" [disabled]="errorMode">3</button>
+  <button class="op-btn smol" (click)="onButtonClick('+')" [disabled]="errorMode">+</button>
+
+  <button class="num-btn" (click)="onButtonClick('+/-')" [disabled]="errorMode">+/-</button>
+  <button class="num-btn" (click)="onButtonClick('0')" [disabled]="errorMode">0</button>
+  <button class="num-btn smol" (click)="onButtonClick('.')" [disabled]="errorMode">.</button>
+  <button id="equal" class="smol" (click)="onButtonClick('=')" [disabled]="errorMode">=</button>
+</div>

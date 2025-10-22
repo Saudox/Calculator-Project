@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div id="calculator">
+  <app-display [value]="display"></app-display>
+  <app-keypad (buttonClick)="handleButtonClick($event)" [errorMode]="errorMode"></app-keypad>
+</div>
+<div class="notification" *ngIf="errorMessage">
+  {{ errorMessage }}
+</div>

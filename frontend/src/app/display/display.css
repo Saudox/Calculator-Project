@@ -1,0 +1,11 @@
+#display {
+  width: 100%;
+  background-color: #F3F3F3;
+  border: none;
+  padding: 20px;
+  text-align: right;
+  font-size: 3rem;
+  color: black;
+  box-sizing: border-box;
+  height: 120px;
+}
