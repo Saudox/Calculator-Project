@@ -54,8 +54,15 @@ public class CalcLogic {
     public String pwrTwo(String expressionStr){
         LastNumberResult lastNumber = getLastNumber(expressionStr);
         int i = lastNumber.index;
-        if(expressionStr.charAt(i) == '-'){
+
+        if (i > 0 && "+-×÷".indexOf(expressionStr.charAt(i-1)) != -1) {
             i--;
+        }
+        else if (i >=0 && expressionStr.charAt(i) == '-') {
+            expressionStr = expressionStr.substring(0, i)+ '+' + expressionStr.substring(i + 1);
+            if(expressionStr.charAt(0) == '+'){
+                expressionStr = expressionStr.substring(1);
+            }
         }
         double num = Math.pow(lastNumber.value, 2);
         DecimalFormat df = new DecimalFormat("#.#####");
